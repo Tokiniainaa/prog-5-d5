@@ -46,7 +46,17 @@ Once the coffee is ready, the machine dispenses it and the user retrieves the dr
 - `Coffee`: Represents a drink with a type, price,quantity and preparation method
 ## Error Handling
 
-- **Insufficient Funds**: If the amount inserted is below the coffee price, an error is displayed.
-- **Invalid Selection**: If the selected coffee is not on the menu, an error is triggered.
-- **Technical Error**: If the machine cannot prepare the coffee, an exception is raised.
-- **Out of Quantity**: If the selected coffee is out of stock, an error notifies the user.  
+- **Insufficient Funds**: Displayed if the user inserts less than the required amount.
+- **Invalid Selection**: Triggered when the selected coffee is not on the menu.
+- **Out of Quantity**: Notified if the chosen coffee is out of stock.
+- **Technical Error**: Raised if the machine fails to prepare the coffee due to an internal issue.  
+
+## Test
+
+We can test the application by:
+
+- Instantiating a `CoffeeMachine` with a sample menu ( Espresso, Latte, etc.).
+- Calling `pay()` with various amounts (below and above coffee prices). 
+- Using `choose()` to select valid and invalid coffee types. 
+- Verifying `getCoffee()` returns the correct result. 
+- Simulating edge cases ( insufficient funds, out-of-stock coffee).
