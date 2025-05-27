@@ -48,8 +48,17 @@ Once the coffee is ready, the machine dispenses it and the user retrieves the dr
 
 - **Insufficient Funds**: Displayed if the user inserts less than the required amount.
 - **Invalid Selection**: Triggered when the selected coffee is not on the menu.
-- **Out of Quantity**: Notified if the chosen coffee is out of stock.
+- **Out of Quantity**: Notified if the chosen coffee is out of stock or Out of Water.
 - **Technical Error**: Raised if the machine fails to prepare the coffee due to an internal issue.  
+
+
+## Possible Optimizations
+- **Dynamic Coffee Menu**: Allow adding or removing coffee types at runtime without changing the code.
+- **User Interface Enhancement**: Develop a graphical user interface (GUI) for better usability.
+- **Persistence**: Save transaction history or user preferences using files or a database.
+- **Error Logging**: Implement detailed error logging for easier debugging and maintenance.
+- **Automated Testing**: Add unit  tests to ensure code reliability.
+- **Change Management**: Implement a system to return change to the user if they insert more money than required.
 
 ## Test
 
